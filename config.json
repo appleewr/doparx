@@ -5,36 +5,36 @@
 		"loglevel": "warning"
 	},
 	"inbounds": [{
-			"port": 10000,
+			"port": 8080,
 			"listen": "127.0.0.1",
 			"protocol": "vmess",
 			"settings": {
 				"clients": [{
-					"id": "UUID",
+					"id": "ca682eaa-cd1d-4393-88e2-f1b9c7012e2a",
 					"alterId": 0
 				}]
 			},
 			"streamSettings": {
 				"network": "ws",
 				"wsSettings": {
-					"path": "VMESS_WSPATH"
+					"path": "ws"
 				}
 			}
 		},
 		{
-			"port": 20000,
+			"port": 8080,
 			"listen": "127.0.0.1",
 			"protocol": "vless",
 			"settings": {
 				"clients": [{
-					"id": "UUID"
+					"id": "ca682eaa-cd1d-4393-88e2-f1b9c7012e2a"
 				}],
 				"decryption": "none"
 			},
 			"streamSettings": {
 				"network": "ws",
 				"wsSettings": {
-					"path": "VLESS_WSPATH"
+					"path": "ws"
 				}
 			}
 		}
